@@ -1,17 +1,39 @@
-# Responsive Blog Theme using Flutter | Web, macOS, Android, iOS
+# Gatsbyjs - Minimal, Simple Blog
 
-## [Watch it on YouTube](https://youtu.be/YvGX4h7Bpic)
+## Getting started
 
-**Packages we are using:**
+### Install and start locally:
 
-- flutter_svg: [link](https://pub.dev/packages/flutter_svg)
-- get: [link](https://pub.dev/packages/get)
+```shell
+gatsby new gatsby-minimal-simple-blog https://github.com/antranapp/gatsby-minimal-simple-blog
+```
 
+### Deploy to Github Pages
 
-Flutter recently announced Flutter V2.0, after that on stable branch it supports Web, macOS, Android, and iOS. That's why today we create a responsive blog theme using flutter that runs on Web, macOS app, Android, and iOS app. Also, we create an animated web menu that has custom hover animation. In the end, you learn how to make a responsive app using flutter.
+**Step 1**
 
-### Responsive Blog Theme using Flutter Final UI
+Start by pushing a gh-pages branch. The initial contents of the branch doesn't matter since it will be overridden with the build artifacts on the next step of this guide.
 
-![Preview](/gif.gif)
+```shell
+git checkout -b gh-pages
+git push -u origin gh-pages
+```
 
-![App UI](/ui.png)
+**Step 2**
+
+In `gatsby-config.js`, change the `pathPrefix` to the name of your Github repository
+
+```javascript
+module.exports = {
+  pathPrefix: `/gatsby-minimal-simple-blog`,
+  ...
+}
+```
+
+**Step 3**
+
+```shell
+npm run deploy
+```
+
+If everything goes well, you should be able to access [the page](https://antranapp.github.io/gatsby-minimal-simple-blog/)
