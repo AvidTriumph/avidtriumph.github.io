@@ -6,6 +6,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
+import Twemoji from '@/components/Twemoji'
+import TypedBios from '@/components/TypedBios'
+import ProfileCard from '@/components/ProfileCard'
 
 const MAX_DISPLAY = 5
 
@@ -16,17 +19,54 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const headingColorClass =
+    'bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600'
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+        <div className="my-4 space-y-2 pt-6 pb-8 md:space-y-5 xl:grid xl:grid-cols-3">
+          <div className="pr-8 xl:col-span-2">
+            <p
+              className={`mb-8 bg-clip-text text-4xl font-extrabold leading-[60px] tracking-tight text-transparent ${headingColorClass} md:text-7xl md:leading-[86px]`}
+            >
+              Howdy, fellow! <i className="twa twa-waving-hand"></i>
+            </p>
+
+            <div className="text-lg leading-8 text-gray-600 dark:text-gray-400">
+              <h1 className="text-neutral-900 dark:text-neutral-200">
+                I'm <span className="font-medium">Pruthvi Duvva</span> - an open-minded{' '}
+                <span className="font-medium">Software Engineer</span> in{' '}
+              </h1>
+              <TypedBios />
+              <p className="mt-4 mb-8">
+                I started my coding journey in late 2016 with C/C++/Java in college
+              </p>
+              <div className="flex flex-col">
+                <Link href="/projects" className="hover:underline">
+                  <Twemoji emoji="hammer-and-wrench" /> What have I built?
+                </Link>
+                <Link href="/blog" className="hover:underline">
+                  <Twemoji emoji="memo" /> My writings
+                </Link>
+                <Link href="/snippets" className="hover:underline">
+                  <Twemoji emoji="dna" /> Useful snippets collected by me
+                </Link>
+                <Link href="/about" className="hover:underline">
+                  <Twemoji emoji="face-with-monocle" /> More about me and myself
+                </Link>
+                <Link href="/resume" className="hover:underline">
+                  <Twemoji emoji="briefcase" /> My resume
+                </Link>
+              </div>
+              <p className="my-8">
+                Happy reading <Twemoji emoji="clinking-beer-mugs" />
+              </p>
+            </div>
+          </div>
+          <div className="hidden xl:block">
+            <ProfileCard />
+          </div>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
