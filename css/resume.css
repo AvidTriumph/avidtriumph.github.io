@@ -1,0 +1,114 @@
+.separator {
+  width: 40%;
+}
+
+.title {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.title a {
+  color: #db4d57;
+}
+
+.title a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+}
+
+.title h3 {
+  font-size: 1.4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry {
+  padding-bottom: 20px;
+}
+
+.pad-left-right {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.section {
+  padding-bottom: 10px;
+}
+
+.left-align {
+  float: left;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  letter-spacing: 0.05rem;
+}
+
+.section .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.entry .date {
+  font-weight: 300;
+}
+
+.entry .name {
+  font-weight: 600;
+}
+
+.entry .designation {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.entry .location {
+  font-weight: 300;
+}
+
+.section p {
+  font-size: 12px;
+}
+
+.outside {
+  margin-left: 18px;
+  list-style-type: disc;
+}
+
+.inside {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+hr {
+  width: 100%;
+  height: 0px;
+  border: none;
+  border-top: 2px solid;
+}
+
+.margin-top {
+  margin-top: 100px;
+}
+
+.section-break {
+  margin-bottom: 10px;
+}

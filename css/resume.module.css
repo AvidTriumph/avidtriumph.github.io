@@ -1,0 +1,7 @@
+.paragraph {
+  font-size: 100px;
+}
+
+.paragraph:hover {
+  color: red;
+}
