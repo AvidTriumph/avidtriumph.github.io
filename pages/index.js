@@ -47,9 +47,6 @@ export default function Home({ posts }) {
               <Link href="/blog" className="hover:underline">
                 <MyTwemoji emoji="memo" /> My writings
               </Link>
-              <Link href="/snippets" className="hover:underline">
-                <MyTwemoji emoji="dna" /> Useful snippets collected by me
-              </Link>
               <Link href="/about" className="hover:underline">
                 <MyTwemoji emoji="face-with-monocle" /> More about me and myself
               </Link>
