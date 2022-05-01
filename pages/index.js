@@ -6,7 +6,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
 import NewsletterForm from '@/components/NewsletterForm'
-import Twemoji from '@/components/Twemoji'
+import MyTwemoji from '@/components/MyTwemoji'
 import TypedBios from '@/components/TypedBios'
 
 const MAX_DISPLAY = 5
@@ -37,27 +37,28 @@ export default function Home({ posts }) {
             </h1>
             <TypedBios />
             <p className="mt-4 mb-8">
-              Andriod developer <Twemoji emoji="man-laptop" /> | Muses a lot | Reads as pastime
+              Andriod developer <MyTwemoji emoji="man-laptop" /> | Muses a lot{' '}
+              <MyTwemoji emoji="thinking" /> | Reads fiction as pastime <MyTwemoji emoji="books" />
             </p>
             <div className="flex flex-col">
               <Link href="/projects" className="hover:underline">
-                <Twemoji emoji="hammer-and-wrench" /> What have I built?
+                <MyTwemoji emoji="hammer-and-wrench" /> What have I built?
               </Link>
               <Link href="/blog" className="hover:underline">
-                <Twemoji emoji="memo" /> My writings
+                <MyTwemoji emoji="memo" /> My writings
               </Link>
               <Link href="/snippets" className="hover:underline">
-                <Twemoji emoji="dna" /> Useful snippets collected by me
+                <MyTwemoji emoji="dna" /> Useful snippets collected by me
               </Link>
               <Link href="/about" className="hover:underline">
-                <Twemoji emoji="face-with-monocle" /> More about me and myself
+                <MyTwemoji emoji="face-with-monocle" /> More about me and myself
               </Link>
               <Link href="/resume" className="hover:underline">
-                <Twemoji emoji="briefcase" /> My resume
+                <MyTwemoji emoji="briefcase" /> My resume
               </Link>
             </div>
             <p className="my-8">
-              Happy reading <Twemoji emoji="clinking-beer-mugs" />
+              Happy reading <MyTwemoji emoji="clinking-beer-mugs" />
             </p>
           </div>
         </div>

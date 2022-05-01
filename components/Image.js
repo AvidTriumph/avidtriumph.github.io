@@ -1,6 +1,6 @@
 import NextImage from 'next/image'
 import { useState } from 'react'
-import ImageLightbox from './ImageLightbox'
+import ImageLightbox from './ImageLightBox'
 
 // eslint-disable-next-line jsx-a11y/alt-text
 const Image = ({ shouldOpenLightbox = true, ...rest }) => {

@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'avidtriumph@gmail.com',
+  email: 'vi4.triumph@gmail.com',
   github: 'https://github.com/ViaTriumph',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
