@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes'
 import { useState, useEffect, useCallback } from 'react'
-import Twemoji from './Twemoji'
+import Twemoji from './twemoji'
 
 const ImageLightbox = ({ src, closeLightbox }) => {
   const [imgLoaded, setImgLoaded] = useState(false)

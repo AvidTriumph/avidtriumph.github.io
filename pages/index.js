@@ -37,7 +37,8 @@ export default function Home({ posts }) {
             </h1>
             <TypedBios />
             <p className="mt-4 mb-8">
-              Andriod developer <Twemoji emoji="man-laptop" /> | Muses a lot | Reads as pastime
+              Andriod developer <Twemoji emoji="man-laptop" /> | Muses a lot{' '}
+              <Twemoji emoji="thinking" /> | Reads fiction as pastime <Twemoji emoji="books" />
             </p>
             <div className="flex flex-col">
               <Link href="/projects" className="hover:underline">

@@ -1,6 +1,6 @@
 import React from 'react'
 import Typed from 'typed.js'
-import Twemoji from './Twemoji'
+import Twemoji from './twemoji'
 
 const TypedBios = () => {
   const el = React.useRef(null)
@@ -26,7 +26,7 @@ const TypedBios = () => {
           <b>Via Triumph</b> is anagram for <b>I am Pruthvi</b>
         </li>
         <li>I'm a builder, learner and freedom seeker.</li>
-        <li>I love andrid development.</li>
+        <li>I love android development.</li>
         <li>
           I'm a sport-guy. I love
           <span className="ml-1">
