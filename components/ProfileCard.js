@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useCallback, useEffect, useRef, useState } from 'react'
-import Twemoji from './twemoji'
 
 const ProfileCard = () => {
   const ref = useRef(null)

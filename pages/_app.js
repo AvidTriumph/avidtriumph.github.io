@@ -1,6 +1,6 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
-import '@/css/twemoji.css'
+import '@/css/mytwemoji.css'
 import '@/css/bootstrap.css'
 import '@/css/resume.css'
 

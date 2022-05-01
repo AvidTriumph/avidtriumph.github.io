@@ -1,6 +1,5 @@
 import React from 'react'
 import Typed from 'typed.js'
-import Twemoji from './twemoji'
 
 const TypedBios = () => {
   const el = React.useRef(null)
@@ -27,15 +26,6 @@ const TypedBios = () => {
         </li>
         <li>I'm a builder, learner and freedom seeker.</li>
         <li>I love android development.</li>
-        <li>
-          I'm a sport-guy. I love
-          <span className="ml-1">
-            <Twemoji emoji="soccer-ball" />,
-            <Twemoji emoji="man-swimming" />,
-            <Twemoji emoji="ping-pong" />,
-            <Twemoji emoji="volleyball" />
-          </span>
-        </li>
         <li>I love EDM music.</li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
