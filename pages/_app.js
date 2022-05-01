@@ -1,6 +1,8 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
-import 'katex/dist/katex.css'
+import '@/css/twemoji.css'
+import '@/css/bootstrap.css'
+import '@/css/resume.css'
 
 import '@fontsource/inter/variable-full.css'
 
