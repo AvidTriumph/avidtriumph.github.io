@@ -18,12 +18,6 @@ const Main = () => {
       <Title />
       <SectionBreak />
       <hr />
-      <Summary />
-      <SectionBreak />
-      <hr />
-      <Skills />
-      <SectionBreak />
-      <hr />
       <div className="row pad-left-right">
         <div className="section">
           <h2 className="section-title">Work Experience</h2>
@@ -32,9 +26,14 @@ const Main = () => {
       <GrowwFTEExperience />
       <GrowwInternExperience />
       <hr />
+      <Skills />
+      <hr />
       <Education />
       <hr />
       <OtherInternships />
+      <hr />
+
+      <DownloadButton />
     </div>
   )
 }
@@ -46,40 +45,14 @@ const Title = () => {
       <h3>Android Engineer</h3>
       <SectionBreak />
       <div className="row">
-        <div className="col-md-4 col-sm-4 text-center">
+        <div className="col-md-12 col-sm-12 text-center">
           <h4>
-            <a href="http://www.github.com">Github</a>
-          </h4>
-        </div>
-        <div className="col-md-4 col-sm-4 text-center">
-          <h4>
-            <a href="http://www.linkedin.com">Linkedin</a>
-          </h4>
-        </div>
-        <div className="col-md-4 col-sm-4 text-center">
-          <h4>
-            <a href="http://www.example.com">Personal Site</a>
+            <a href="http://www.github.com">Github </a>•
+            <a href="http://www.linkedin.com"> Linkedin </a>•
+            <a href="http://www.example.com"> Personal Site</a>
           </h4>
         </div>
       </div>
-    </div>
-  )
-}
-
-const Summary = () => {
-  return (
-    <div className="row pad-left-right">
-      <div className="col-md-3 section">
-        <h2 className="section-title">Summary</h2>
-      </div>
-      <p className="col-md-9">
-        Enthusiastic and diligent self-starter with two years’ experience creating and maintaining
-        complex banking and financing apps in multiple languages. Excellent knowledge of Agile
-        development techniques and skilled at communicating expertise to others and providing
-        practical support. Able to manage and prioritize numerous pressing tasks at once and plan
-        strategically to ensure all deadlines are met. Rapid learner and continually strives to
-        update knowledge by researching emerging online banking technologies.
-      </p>
     </div>
   )
 }
@@ -90,20 +63,20 @@ const Skills = () => {
       <div className=" col-md-3 col-sm-3">
         <div className="section-title">Skills</div>
       </div>
-      <div className="col-md-3 col-sm-3">
-        <p>Android app development</p>
-        <p>Kotlin</p>
-        <p>API contract</p>
-      </div>
-      <div className="col-md-3 col-sm-3">
-        <p>Release train</p>
-        <p>Coda</p>
-        <p>User Interface</p>
-      </div>
-      <div className="col-md-3 col-sm-3">
-        <p>Room DB</p>
-        <p>Design principles</p>
-        <p>Agile process</p>
+      <div className="col-md-9 col-sm-9">
+        <p>
+          <u>App development skills</u>: Android app development, API contract, User Interface,
+          Design principles
+        </p>
+        <p>
+          <u>Language & Frameworks</u>: Kotlin, Java, XML
+        </p>
+        <p>
+          <u>Databases</u>: Room, Shared Preferences
+        </p>
+        <p>
+          <u>Others</u>: Agile process, Release train, Coda
+        </p>
       </div>
     </div>
   )
@@ -221,7 +194,7 @@ const GrowwFTEExperience = () => {
             <ul className="inside">
               <li>Brought up ideas for feature search and feedback CTA.</li>
               <li>Feature search now has nearly 1.2M clicks/month.</li>
-              <li>Also further refactored search from multiple LiveData to a single flow.</li>
+              <li>Restructured search architecture and reduced LiveData usage by 10x.</li>
             </ul>
 
             <li>
@@ -231,41 +204,35 @@ const GrowwFTEExperience = () => {
             </li>
             <ul className="inside">
               <li>
-                Implemented custom two-layer caching logic (Disk + memory LRU caching) of assets
-                (PNG, JPEG) and file caching(JS, CSS, WOFF2) for low network bands (2G, 3G)
+                Developed custom two-layer caching logic (Disk + memory LRU caching) of assets file
+                caching for low network bands (2G, 3G).
               </li>
               <li>This led to a nearly 60% (~4.79 to ~1.96) reduction in page load time.</li>
               <li>Migrated the Help and Support section to WebView.</li>
             </ul>
             <li>
-              Implemented features like root and overlay detection, More Products, and migrated
-              deprecated fingerprint library to biometric library
+              Implemented features like root and overlay detection, More Products, and upgraded
+              deprecated fingerprint library to biometric library.
             </li>
             <li>Conducted several A/B experiments using Firebase with a custom audience.</li>
+            <li>
+              Added logic for handling corner cases for line charts like upper circuit, lower
+              circuit, and missing data points.
+            </li>
           </ul>
           <SectionBreak />
           <h2>
             <b>MF &amp; Gold</b>
           </h2>
           <ul className="outside">
-            <li>Drafted API contracts for several use cases</li>
             <li>
-              App POC and dev for the SIP(Systematic Investment Plan) journey in the android app
-              (SIP details, Edit SIP, SIP landing) and gold front screens (explore, dashboard,
-              product page), migrated codebase from react-native to native for better performance
-              along with new design revamp
+              Drafted multiple API contracts and reduced network traffic by 5x in one use case.
             </li>
-          </ul>
-          <SectionBreak />
-          <h2>
-            <b>Other</b>
-          </h2>
-          <ul className="outside">
             <li>
-              Line chart: Added logic for handling corner cases like upper circuit, lower circuit,
-              and missing data points.
+              Developed and was POC for more than 6 screens for eg: SIP(Systematic Investment Plan)
+              journey (SIP details, Edit SIP, SIP landing) and gold front screens (explore,
+              dashboard, product page) in the android app.
             </li>
-            <li>Created a coda tool for tracking release trains.</li>
           </ul>
         </div>
       </div>
@@ -291,9 +258,13 @@ const GrowwInternExperience = () => {
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-9">
-          Joined as an intern and was among the initial native developers. I was responsible for
-          migrating the following features from react-native to native for performance upgrades and
-          implementing a design revamp for Search, Stock & MF order details, My orders.
+          <ul className="outside">
+            <li>Was among the initial 4 native developers.</li>
+            <li>
+              Responsible for migrating codebase from react native developers for more than 3
+              use-cases (e.g. Search, Stock & MF order details, My orders) for performance benefits.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -302,6 +273,25 @@ const GrowwInternExperience = () => {
 
 const SectionBreak = () => {
   return <div className="section-break" />
+}
+
+const DownloadButton = () => {
+  return (
+    <>
+      <div className="col-md-5" />
+      <div className="col-md-2">
+        <button
+          className={`w-full rounded-md bg-primary-500 py-2 px-4 font-medium text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black dark:hover:bg-primary-400 sm:py-0`}
+          type="submit"
+        >
+          <a href="/static/doc/resume.pdf" alt="alt text" target="_blank" rel="noopener noreferrer">
+            Download resume
+          </a>
+        </button>
+      </div>
+      <div className="col-md-7" />
+    </>
+  )
 }
 
 class SectionItem {

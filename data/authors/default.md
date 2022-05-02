@@ -1,12 +1,15 @@
 ---
 name: Pruthvi Duvva
-avatar: /static/images/avatar.png
+avatar: /static/images/dp.jpg
 occupation: Android Developer
-company: ABC
+company: Groww
 email: vi4.triumph@gmail.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
+linkedin: https://www.linkedin.com/in/pruthvi-duvva-b97270168/
 github: https://github.com/ViaTriumph
 ---
 
-Pruthvi is an Android Developer
+Pruthvi is an Android Developer. His work involves developing new screens, design new architechute and debugging nasty bugs.
+
+Pruthvi also likes to read fiction.
+
+Pruthvi is also interested in Stock market. Mainly algo coding, F&O strategies and fundamentals.

@@ -3,19 +3,16 @@ const siteMetadata = {
   author: 'Pruthvi Duvva',
   headerTitle: "Pruthvi's Blog",
   description: 'Android and coding',
-  language: 'en-us',
+  language: 'en-gb',
   theme: 'system', // system, dark or light
   siteUrl: 'https://viatriumph.com',
   siteRepo: 'https://github.com/viatriumph/Personal-site',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/dp.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'vi4.triumph@gmail.com',
   github: 'https://github.com/ViaTriumph',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/pruthvi-duvva-b97270168/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
