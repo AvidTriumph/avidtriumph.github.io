@@ -92,7 +92,7 @@ const Section = ({ timeline, name, location }) => {
         <h3>{name}</h3>
       </div>
       <div className="col-md-2 location box">
-        <h3>{location}</h3>
+        <h3>{location}, India</h3>
       </div>
     </div>
   )
@@ -108,7 +108,7 @@ const WorkSection = ({ timeline, designation, location }) => {
         <h3>{designation}</h3>
       </div>
       <div className="col-md-2 location box">
-        <h3>{location}</h3>
+        <h3>{location}, India</h3>
       </div>
     </div>
   )
@@ -179,59 +179,42 @@ const GrowwFTEExperience = () => {
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-9">
-          <div>
-            An active startup with more than 10M+ users and a 4.5-star android app rating. I have
-            worked with more than 5 Product managers across 2 PODs and I have been Release Manager 4
-            times
-          </div>
-          <h2>
-            <b>UX &amp; Core</b>
-          </h2>
           <ul className="outside">
             <li>
-              <b>Search</b>
+              {' '}
+              Worked with more than 5 product managers across 2 teams and have been release manager
+              4 times. (10M+ userbase, 4.5-star rating)
             </li>
-            <ul className="inside">
-              <li>Brought up ideas for feature search and feedback CTA.</li>
-              <li>Feature search now has nearly 1.2M clicks/month.</li>
-              <li>Restructured search architecture and reduced LiveData usage by 10x.</li>
-            </ul>
-
             <li>
-              <h2>
-                <b>WebView</b>
-              </h2>
+              Proposed and implemented features like feature search and feedback CTA which now has
+              nearly 1.2M clicks/month.
             </li>
-            <ul className="inside">
-              <li>
-                Developed custom two-layer caching logic (Disk + memory LRU caching) of assets file
-                caching for low network bands (2G, 3G).
-              </li>
-              <li>This led to a nearly 60% (~4.79 to ~1.96) reduction in page load time.</li>
-              <li>Migrated the Help and Support section to WebView.</li>
-            </ul>
+            <li>Restructured search architecture and reduced LiveData usage by 10x.</li>
             <li>
-              Implemented features like root and overlay detection, More Products, and upgraded
+              Reduced page load time by 60% (~4.79 to ~1.96) by developing hybrid two-layer caching
+              logic (Disk + memory LRU caching) of both assets & file caching for low network bands
+              (2G, 3G).
+            </li>
+            <li>Migrated the Help and Support section to WebView.</li>
+            <li>
+              Implemented features like root and overlay detection, more products, and upgraded
               deprecated fingerprint library to biometric library.
             </li>
-            <li>Conducted several A/B experiments using Firebase with a custom audience.</li>
             <li>
-              Added logic for handling corner cases for line charts like upper circuit, lower
-              circuit, and missing data points.
+              Conducted several A/B experiments using Firebase with a custom audience. With one
+              variant outperforming others by 4% with 99% confidence.{' '}
             </li>
-          </ul>
-          <SectionBreak />
-          <h2>
-            <b>MF &amp; Gold</b>
-          </h2>
-          <ul className="outside">
             <li>
               Drafted multiple API contracts and reduced network traffic by 5x in one use case.
             </li>
             <li>
-              Developed and was POC for more than 6 screens for eg: SIP(Systematic Investment Plan)
+              Developed and owned more than 6 screens for eg: Systematic Investment Plan(SIP)
               journey (SIP details, Edit SIP, SIP landing) and gold front screens (explore,
               dashboard, product page) in the android app.
+            </li>
+            <li>
+              Added logic for handling corner cases for line charts like upper circuit, lower
+              circuit, and missing data points.
             </li>
           </ul>
         </div>
@@ -262,7 +245,8 @@ const GrowwInternExperience = () => {
             <li>Was among the initial 4 native developers.</li>
             <li>
               Responsible for migrating codebase from react native developers for more than 3
-              use-cases (e.g. Search, Stock & MF order details, My orders) for performance benefits.
+              use-cases (e.g. Search, Stock & MF order details, My orders) for performance
+              enhancement.
             </li>
           </ul>
         </div>
